@@ -1,5 +1,5 @@
 # 1. Infrastructure overview
-Vicinity Adapter for GDPR Value Added Service of MPH Pilot Case.
+Vicinity Adapter for Value Added Service 3.1.2 of MPH Pilot Case.
 
 # 2. Configuration and deployment
 ## Build using Maven
