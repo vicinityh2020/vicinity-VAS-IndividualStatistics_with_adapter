@@ -1,0 +1,1 @@
+# vicinity-VAS-IndividualStatistics_with_adapter
