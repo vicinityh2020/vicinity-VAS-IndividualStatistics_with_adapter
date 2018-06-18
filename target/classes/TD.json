@@ -1,0 +1,14 @@
+{
+    "adapter-id": "adapter3.1.2",
+    "thing-descriptions":
+            [{
+                    "name": "VAS 3.1.2 - Individual Statistics",
+                    "type": "core:Service",
+                    "version": "0.0.1",
+                    "oid": "vas3.1.2",
+                    "properties": [],
+                    "actions": [],
+                    "events": []
+                }
+            ]
+}
