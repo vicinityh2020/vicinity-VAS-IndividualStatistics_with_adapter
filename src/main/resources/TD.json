@@ -1,14 +1,211 @@
 {
-    "adapter-id": "adapter3.1.2",
-    "thing-descriptions":
-            [{
-                    "name": "VAS 3.1.2 - Individual Statistics",
-                    "type": "core:Service",
-                    "version": "0.0.1",
-                    "oid": "vas3.1.2",
-                    "properties": [],
-                    "actions": [],
-                    "events": []
-                }
-            ]
+	"adapter-id": "adapter3.1.2",
+	"thing-descriptions":
+	[{
+			"name": "VAS 3.1.2 - Individual Statistics",
+			"type": "core:Service",
+			"version": "0.0.1",
+			"oid": "vas3.1.2",
+			"properties": [{
+					"pid": "push_measurement",
+					"monitors": "adapters:OnOff",
+					"read_link": {
+						"href": "/objects/{oid}/properties/{pid}",
+						"output": {
+							"type": "object",
+							"field": [{
+									"name": "adapterId",
+									"schema": {
+										"type": "string"
+									}
+								}, {
+									"name": "userId",
+									"schema": {
+										"type": "string"
+									}
+								}
+							]
+						}
+					},
+					"write_link": {
+						"href": "/objects/{oid}/properties/{pid}",
+						"input": {
+							"type": "object",
+							"field": [{
+									"name": "adapterId",
+									"schema": {
+										"type": "string"
+									}
+								}, {
+									"name": "userId",
+									"schema": {
+										"type": "string"
+									}
+								}
+							]
+						},
+						"output": {
+							"type": "object",
+							"field": [{
+									"name": "success",
+									"schema": {
+										"type": "boolean"
+									}
+								}
+							]
+						}
+					}
+				}, {
+					"pid": "user_profile",
+					"monitors": "adapters:OnOff",
+					"read_link": {
+						"href": "/objects/{oid}/properties/{pid}",
+						"output": {
+							"type": "object",
+							"field": [{
+									"name": "adapterId",
+									"schema": {
+										"type": "string"
+									}
+								}, {
+									"name": "userId",
+									"schema": {
+										"type": "string"
+									}
+								}
+							]
+						}
+					},
+					"write_link": {
+						"href": "/objects/{oid}/properties/{pid}",
+						"input": {
+							"type": "object",
+							"field": [{
+									"name": "adapterId",
+									"schema": {
+										"type": "string"
+									}
+								}, {
+									"name": "userId",
+									"schema": {
+										"type": "string"
+									}
+								}
+							]
+						},
+						"output": {
+							"type": "object",
+							"field": [{
+									"name": "success",
+									"schema": {
+										"type": "boolean"
+									}
+								}
+							]
+						}
+					}
+				}, {
+					"pid": "latest_frequencies",
+					"monitors": "adapters:OnOff",
+					"read_link": {
+						"href": "/objects/{oid}/properties/{pid}",
+						"output": {
+							"type": "object",
+							"field": [{
+									"name": "adapterId",
+									"schema": {
+										"type": "string"
+									}
+								}, {
+									"name": "userId",
+									"schema": {
+										"type": "string"
+									}
+								}
+							]
+						}
+					},
+					"write_link": {
+						"href": "/objects/{oid}/properties/{pid}",
+						"input": {
+							"type": "object",
+							"field": [{
+									"name": "adapterId",
+									"schema": {
+										"type": "string"
+									}
+								}, {
+									"name": "userId",
+									"schema": {
+										"type": "string"
+									}
+								}
+							]
+						},
+						"output": {
+							"type": "object",
+							"field": [{
+									"name": "success",
+									"schema": {
+										"type": "boolean"
+									}
+								}
+							]
+						}
+					}
+				}, {
+					"pid": "notifications",
+					"monitors": "adapters:OnOff",
+					"read_link": {
+						"href": "/objects/{oid}/properties/{pid}",
+						"output": {
+							"type": "object",
+							"field": [{
+									"name": "adapterId",
+									"schema": {
+										"type": "string"
+									}
+								}, {
+									"name": "userId",
+									"schema": {
+										"type": "string"
+									}
+								}
+							]
+						}
+					},
+					"write_link": {
+						"href": "/objects/{oid}/properties/{pid}",
+						"input": {
+							"type": "object",
+							"field": [{
+									"name": "adapterId",
+									"schema": {
+										"type": "string"
+									}
+								}, {
+									"name": "userId",
+									"schema": {
+										"type": "string"
+									}
+								}
+							]
+						},
+						"output": {
+							"type": "object",
+							"field": [{
+									"name": "success",
+									"schema": {
+										"type": "boolean"
+									}
+								}
+							]
+						}
+					}
+				}
+			],
+			"actions": [],
+			"events": []
+		}
+	]
 }
